@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pdbsflhr22.studentsystem.AddExam"
+    android:orientation="vertical">
+
+    <!--<EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Student Name"
+        android:id="@+id/studentNAme"
+        android:inputType="textAutoComplete"
+        android:paddingLeft="8dp" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_height="40dp" android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Select Student"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="18dp"
+            android:layout_weight="0.59"
+            android:gravity="center_vertical" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/studentIdentity"
+            android:gravity="center_vertical"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="6dp"
+        android:hint="Student Name and Roll_Num (student 1234)"
+        android:id="@+id/sudname"
+        android:visibility="gone"
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:hint="English "
+        android:id="@+id/sub1"
+        android:inputType="number"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Pakstudies"
+        android:id="@+id/sub2"
+        android:inputType="number"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Urdu"
+        android:id="@+id/sub3"
+        android:inputType="number"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Maths"
+        android:id="@+id/sub4"
+        android:inputType="number"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Islamiyat"
+        android:id="@+id/sub5"
+        android:inputType="number"
+        android:paddingLeft="8dp" />
+
+    <LinearLayout android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="3dp">
+
+        <TextView android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Elective"
+            android:gravity="center" />
+        <Spinner
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.47"
+            android:entries="@array/subjects" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:hint="Marks"
+            android:id="@+id/sub6"
+            android:layout_weight="1"/>
+        
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/radiogp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Attandence"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/textView5"
+            android:gravity="center" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Bad"
+            android:id="@+id/radioButton"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Modrate"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Good"
+            android:id="@+id/radioButton3"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Excellent"
+            android:id="@+id/radioButton4"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/remarks"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:hint="Remarks"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="3dp" />
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:layout_height="45dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Status"
+        android:id="@+id/status"
+        android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Record"
+            android:id="@+id/save_record"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

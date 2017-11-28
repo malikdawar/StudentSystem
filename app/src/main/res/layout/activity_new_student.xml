@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent" tools:context="com.example.pdbsflhr22.studentsystem.NewStudent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:weightSum="1">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/micon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp" />
+
+
+  <!--  <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">-->
+        <EditText
+            android:id="@+id/stdfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Full Name"
+            android:textSize="17dp"
+            android:textColorHint="@color/abc_tint_edittext"
+            android:paddingLeft="5dp" />
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+
+  <!--  <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">-->
+        <EditText
+            android:id="@+id/stdemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textSize="17dp"
+            android:textColorHint="@color/abc_tint_edittext"
+            android:paddingLeft="5dp" />
+
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+   <!-- <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">-->
+        <EditText
+            android:id="@+id/stdnumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Phone Number"
+            android:textSize="17dp"
+            android:textColorHint="@color/abc_tint_edittext"
+            android:paddingLeft="5dp" />
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+   <!-- <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">-->
+
+        <EditText
+            android:id="@+id/stdRollnum"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:hint="Roll Number"
+            android:textSize="17dp"
+            android:textColorHint="@color/abc_tint_edittext"
+            android:paddingLeft="5dp" />
+
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+   <!-- <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">-->
+
+        <EditText
+            android:id="@+id/stdSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class"
+            android:textSize="17dp"
+            android:textColorHint="@color/abc_tint_edittext"
+            android:paddingLeft="5dp" />
+
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:paddingLeft="5dp" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderr"
+            android:layout_weight="1"
+            android:entries="@array/genders"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+   <!-- <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">-->
+        <EditText
+            android:id="@+id/parentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Parent's Email"
+            android:textSize="17dp"
+            android:textColorHint="@color/abc_tint_edittext"
+            android:paddingLeft="5dp" />
+
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">-->
+        <EditText
+            android:id="@+id/parentNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Parent's Number"
+            android:textSize="17dp"
+            android:textColorHint="@color/abc_tint_edittext"
+            android:paddingLeft="5dp" />
+
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+
+
+    <Button
+        android:id="@+id/registerStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="ADD STUDENT"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttoncolor"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+
+</LinearLayout>
+</LinearLayout>

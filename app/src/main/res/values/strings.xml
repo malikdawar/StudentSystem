@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">E-Diary</string>
+    <string name="title_activity_home_drawer">E-Diary</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="aboutApp">Teacher can:
+        \n • Add Students
+        \n • Send Announcements
+        \n • Communicate with Parents and Students
+        \n • Update the result of students</string>
+
+    <array name="genders" id="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <array name="exams" id="exams">
+        <item>First_Term</item>
+        <item>Second_Term</item>
+        <item>Final_Term</item>
+    </array>
+
+    <array name="subjects" id="subjects">
+        <item>Science</item>
+        <item>General Science</item>
+
+    </array>
+
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/students"
+            android:icon="@drawable/person"
+            android:title="Students" />
+
+        <item
+            android:id="@+id/addstudent"
+            android:icon="@drawable/ic_add"
+            android:title="Add Students" />
+
+
+        <item
+            android:id="@+id/alerts"
+            android:icon="@drawable/alerrt"
+            android:title="Announcements" />
+
+        <item
+            android:id="@+id/addalert"
+            android:icon="@drawable/alerrt"
+            android:title="Add Announcement" />
+
+
+        <item
+            android:id="@+id/exams"
+            android:icon="@drawable/ic_document"
+            android:title="Exams MarkSheet" />
+
+        <item
+            android:id="@+id/addexams"
+            android:icon="@drawable/ic_document"
+            android:title="Add Exam Marks" />
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_menu_help"
+            android:title="Help" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+            <item
+                android:id="@+id/reset_pwd"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Reset Password" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_exit"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
